@@ -9,6 +9,7 @@ class ImageSearchEngine < Sinatra::Base
 
   get '/search' do
     @colour = params[:colour]
+    @result = RandomWord.new.result
     erb :'search'
   end
 end
