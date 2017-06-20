@@ -6,4 +6,4 @@ require 'sinatra/partial'
 
 require_relative 'data_mapper_setup'
 require_relative 'server'
-require_relative 'image_search'
+require_relative 'controllers/image_search'
