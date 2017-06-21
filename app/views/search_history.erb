@@ -1,13 +1,34 @@
-<h1> Search History </h1>
+<style>
+  body {
+    background-size: cover;
+    text-align: center;
+  }
+</style>
 
-<ul id='search_history'>
-  <% @history.each do |history| %>
-    <li>
-      Date:               <%= history.date %>
-      Time:               <%= history.time %>
-      Noun:               <%= history.noun %>
-      Colour:             <%= history.colour %>
-      Http response time: <%= history.http_response %>
-    </li>
-  <% end %>
-</ul>
+<body>
+  <h1> Search History </h1>
+
+  <ul id='search_history'>
+    <table align="center" border="1">
+      <tr>
+        <th> <h2>Date</h2> </th>
+        <th> <h2>Time</h2> </th>
+        <th> <h2>Noun</h2> </th>
+        <th> <h2>Colour</h2> </th>
+        <th> <h2>Http response time</h2> </th>
+      </tr>
+
+    <% @history.reverse.each do |history| %>
+
+      <tr>
+        <th> <h4><%= history.date %></h4> </th>
+        <th> <h4><%= history.time %></h4> </th>
+        <th> <h4><%= history.noun %></h4> </th>
+        <th> <h4><%= history.colour %></h4> </th>
+        <th> <h4><%= history.http_response %></h4> </th>
+      </tr>
+    <% end %>
+
+    </table>
+  </ul>
+</body>

@@ -15,8 +15,7 @@ class ImageSearchEngine < Sinatra::Base
       @list.pop
     end
 
-    # @history = SearchHistory.create(date: params[:date], time: params[:time], noun: params[:noun], colour: params[:colour], http_response: params[:http_response])
-    @history = SearchHistory.create(date: "params[:date]", time: 'params[:time]', noun: 'params[:noun]', colour: 'params[:colour]', http_response: 'params[:http_response]')
+    @history = SearchHistory.create(date: "#{Time.new.strftime("%d/%m/%Y")}", time: "#{Time.new.strftime("%H:%M:%S")}", noun: "#{@result}", colour: "#{@colour}", http_response: 'params[:http_response]')
 
     erb :'search'
   end
