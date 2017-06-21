@@ -10,8 +10,7 @@ This project is built using ruby 2.4.0 and sinatra that creates an image search 
 The following list describes the requirements for this project:
 * The user must be able to select the following colours: Red, Pink, Orange, Yellow, Green,
 Blue, and Purple
-* The search must use a random one of the following search terms and the selected colour as a filter: man, mountain, state, ocean, country, building, cat, airline, wealth,
-happiness, pride, fear, religion, bird, book, phone, rice, snow, water.
+* The search must use a random one of the following search terms and the selected colour as a filter: man, mountain, state, ocean, country, building, cat, airline, wealth, happiness, pride, fear, religion, bird, book, phone, rice, snow, water.
 * The colours must be presented as squares for the user to select
 *	The top 5 search result images returned need to be displayed
 * The top search result needs to be able to be clicked by the user & will take the user to the image’s url
