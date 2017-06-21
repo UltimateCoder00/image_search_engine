@@ -3,10 +3,6 @@ class ImageSearchEngine < Sinatra::Base
     erb :'index'
   end
 
-  post '/search' do
-    erb :'search'
-  end
-
   get '/search' do
     @colour = params[:colour]
     @result = RandomWord.new.result
@@ -18,6 +14,15 @@ class ImageSearchEngine < Sinatra::Base
       @image_urls << @list.pop
       @list.pop
     end
+
+    # @history = SearchHistory.create(date: params[:date], time: params[:time], noun: params[:noun], colour: params[:colour], http_response: params[:http_response])
+    @history = SearchHistory.create(date: "params[:date]", time: 'params[:time]', noun: 'params[:noun]', colour: 'params[:colour]', http_response: 'params[:http_response]')
+
     erb :'search'
+  end
+
+  get '/search_history' do
+    @history = SearchHistory.all
+    erb :'search_history'
   end
 end

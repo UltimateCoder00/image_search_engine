@@ -1,0 +1,13 @@
+<h1> Search History </h1>
+
+<ul id='search_history'>
+  <% @history.each do |history| %>
+    <li>
+      Date:               <%= history.date %>
+      Time:               <%= history.time %>
+      Noun:               <%= history.noun %>
+      Colour:             <%= history.colour %>
+      Http response time: <%= history.http_response %>
+    </li>
+  <% end %>
+</ul>
