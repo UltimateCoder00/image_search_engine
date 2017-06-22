@@ -24,4 +24,5 @@ class ImageSearchEngine < Sinatra::Base
     @history = SearchHistory.all
     erb :'search_history'
   end
+
 end
