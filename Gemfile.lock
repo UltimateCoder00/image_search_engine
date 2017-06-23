@@ -14,6 +14,7 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    coderay (1.1.1)
     coveralls (0.8.21)
       json (>= 1.8, < 3)
       simplecov (~> 0.14.1)
@@ -74,6 +75,7 @@ GEM
     fastercsv (1.5.5)
     json (1.8.6)
     json_pure (1.8.6)
+    method_source (0.8.2)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
@@ -82,6 +84,10 @@ GEM
     mustermann (1.0.0)
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
+    pry (0.10.4)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
     public_suffix (2.0.5)
     rack (2.0.3)
     rack-protection (2.0.0)
@@ -114,6 +120,7 @@ GEM
       tilt (~> 2.0)
     sinatra-partial (0.4.0)
       sinatra
+    slop (3.6.0)
     stringex (1.5.1)
     term-ansicolor (1.6.0)
       tins (~> 1.0)
@@ -134,6 +141,7 @@ DEPENDENCIES
   data_mapper
   database_cleaner
   dm-postgres-adapter
+  pry
   rack
   rake
   rspec

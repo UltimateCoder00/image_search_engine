@@ -11,6 +11,7 @@ gem 'rack'
 gem 'byebug'
 gem 'database_cleaner'
 gem 'coveralls', require: false
+gem 'pry'
 
 group :test do
   gem 'capybara'
