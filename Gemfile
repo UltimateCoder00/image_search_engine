@@ -10,6 +10,9 @@ gem 'rake'
 gem 'rack'
 gem 'byebug'
 gem 'database_cleaner'
-gem 'capybara'
-gem 'rspec'
 gem 'coveralls', require: false
+
+group :test do
+  gem 'capybara'
+  gem 'rspec'
+end
