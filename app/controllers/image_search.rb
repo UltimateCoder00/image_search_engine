@@ -31,12 +31,4 @@ class ImageSearchEngine < Sinatra::Base
     erb :'search_history'
   end
 
-  get '/previous_search' do
-    @history = SearchHistory.all
-    @colour = 1
-    @result = 1
-    @image_urls = 1
-    erb :'previous_searchs'
-  end
-
 end
