@@ -97,5 +97,5 @@ Then in the your web browser, type the following in your url bar:
 ```
 
 ### Developers
-This app was produced by the following developers:
+This app was produced by the following developer:
 - [Hasan Sonmez](https://github.com/UltimateCoder00)
