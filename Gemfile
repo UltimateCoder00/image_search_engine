@@ -8,11 +8,8 @@ gem 'sinatra'
 gem 'sinatra-partial'
 gem 'rake'
 gem 'rack'
-
-group :test do
-  gem 'byebug'
-  gem 'database_cleaner'
-  gem 'capybara'
-  gem 'rspec'
-  gem 'coveralls', require: false
-end
+gem 'byebug'
+gem 'database_cleaner'
+gem 'capybara'
+gem 'rspec'
+gem 'coveralls', require: false
