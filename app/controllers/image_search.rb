@@ -1,6 +1,9 @@
 require "benchmark"
 
 class ImageSearchEngine < Sinatra::Base
+
+  @@array = []
+
   get '/' do
     erb :'index'
   end
@@ -18,6 +21,8 @@ class ImageSearchEngine < Sinatra::Base
         @list.pop
       end
     end
+
+    @@array << @images_urls
 
     time = (time.real)*1000
 
