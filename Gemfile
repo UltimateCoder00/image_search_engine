@@ -10,6 +10,7 @@ gem 'rake'
 gem 'rack'
 
 group :test do
+  gem 'byebug'
   gem 'database_cleaner'
   gem 'capybara'
   gem 'rspec'
